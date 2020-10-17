@@ -1,0 +1,26 @@
+{
+  "name": "chrome-history-reader",
+  "description": "chrome history reader",
+  "version": "0.0.1",
+  "author": "ytakahashi",
+  "bugs": {
+    "url": "https://github.com/ytakahashi/chrome-history-reader/issues"
+  },
+  "homepage": "https://github.com/ytakahashi/chrome-history-reader#readme",
+  "keywords": [
+    "Chrome",
+    "Google Chrome"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ytakahashi/chrome-history-reader.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "better-sqlite3": "^7.1.1"
+  }
+}
