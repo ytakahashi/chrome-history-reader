@@ -18,6 +18,8 @@
     "url": "git+ssh://git@github.com/ytakahashi/chrome-history-reader.git"
   },
   "scripts": {
+    "lint": "prettier --check \"**/*.{js,ts}\"",
+    "lint:fix": "prettier --write \"**/*.{js,ts}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -26,6 +28,12 @@
   "devDependencies": {
     "@types/better-sqlite3": "^5.4.0",
     "@types/node": "^14.11.10",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
     "typescript": "^4.0.3"
   }
 }
