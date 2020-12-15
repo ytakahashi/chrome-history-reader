@@ -11,7 +11,7 @@ describe('index', () => {
 
   it('reads history file', () => {
     const option: HistoryReaderOption = {
-      historyFilePath: path.resolve(__dirname, 'resources/history-test.db')
+      historyFilePath: path.resolve(__dirname, 'resources/history-test.db'),
     }
     const historyReader = new ChromeHistoryReader(option)
 

@@ -14,8 +14,10 @@ export class History {
 export class ChromeHistoryReader {
   #db: Database.Database
 
-  constructor(public readonly option?: HistoryReaderOption) {
-    const file = option?.historyFilePath ? option?.historyFilePath : `${os.homedir()}/Library/Application Support/Google/Chrome/Default/History`
+  constructor(readonly option?: HistoryReaderOption) {
+    const file = option?.historyFilePath
+      ? option?.historyFilePath
+      : `${os.homedir()}/Library/Application Support/Google/Chrome/Default/History`
     const dbFile = `${__dirname}/../db/history.db`
 
     fs.copyFileSync(file, dbFile)
