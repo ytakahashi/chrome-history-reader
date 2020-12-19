@@ -6,22 +6,6 @@
   "bugs": {
     "url": "https://github.com/ytakahashi/chrome-history-reader/issues"
   },
-  "homepage": "https://github.com/ytakahashi/chrome-history-reader#readme",
-  "keywords": [
-    "Chrome",
-    "Google Chrome"
-  ],
-  "license": "MIT",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/ytakahashi/chrome-history-reader.git"
-  },
-  "scripts": {
-    "lint": "prettier --check \"**/*.{js,ts}\"",
-    "lint:fix": "prettier --write \"**/*.{js,ts}\"",
-    "test": "mocha"
-  },
   "dependencies": {
     "better-sqlite3": "^7.1.1"
   },
@@ -40,5 +24,27 @@
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/ytakahashi/chrome-history-reader#readme",
+  "keywords": [
+    "Chrome",
+    "Google Chrome",
+    "history"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ytakahashi/chrome-history-reader.git"
+  },
+  "scripts": {
+    "lint": "prettier --check \"**/*.{js,ts}\"",
+    "lint:fix": "prettier --write \"**/*.{js,ts}\"",
+    "prepublishOnly": "npm run tsc",
+    "test": "mocha",
+    "tsc": "tsc"
   }
 }
