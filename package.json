@@ -1,7 +1,7 @@
 {
   "name": "chrome-history-reader",
   "description": "chrome history reader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ytakahashi",
   "bugs": {
     "url": "https://github.com/ytakahashi/chrome-history-reader/issues"
