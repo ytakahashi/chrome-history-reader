@@ -1,7 +1,7 @@
 {
   "name": "chrome-history-reader",
   "description": "chrome history reader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "ytakahashi",
   "bin": {
     "chrome-history": "bin/chrome-history.js"
